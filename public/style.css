@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+
+    .polygon {
+
+        clip-path: polygon(0 10%, 90% 0, 100% 0%, 100% 100%, 0% 100%);
+        border-top-right-radius: min(10vw, 7rem);
+        background-position: top -600px left -1600px, center;
+        background-size: 3800px, auto;
+    }
+
+    .polygonBlue {
+        clip-path: polygon(0 0, 100% 4rem, 100% 100%, 90% 100%, 0 95%);
+        /* border-top-right-radius: min(10vw, 7rem); */
+        background-position: top 60px left 0px, center;
+        background-size: 3600px, auto;
+    }
+
+    .afterImg:after {
+        background: transparent url('/public/assest/svg/darkBG.svg') no-repeat;
+        background-position: bottom -12rem right -10rem;
+        background-size: 205%;
+        content: "";
+        display: block;
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
+
+}
